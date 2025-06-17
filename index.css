@@ -38,9 +38,10 @@ header
     text-decoration: none;
     color: rgb(0, 59, 0);
     font-weight: 500;
+    padding: 20px 0;
 }
 
-.submenu {
+.menus .submenu {
     display: none !important;
     position: absolute;
     flex-direction: column;
@@ -49,7 +50,8 @@ header
     width: 250px;
     z-index: 1000;
     left: -66px;
-    top: 45px;
+    top: 52px;
+    
     
 }
 
@@ -59,19 +61,39 @@ header
     border-bottom: 1px solid white;
 }
 
+.submenu li:hover
+{
+    background-color: red;
+}
+
 .submenu li a
 {
     color: white !important; 
 }
 
+
+.prem {
+    position: absolute;
+    background-color: rgb(0, 59, 0);
+    left: -146px;
+    top: -1px;
+    flex-direction: column;
+    display: none !important;
+}
+
 .home:hover .submenu {
-    display: flex;
+    display: block;
 }
 
 .menus ul li:hover .submenu
 {
     display: block !important;
-}               
+}             
+
+ .submenu li:hover .prem
+{
+    display: block !important;  
+}
 
 
 .login
@@ -85,3 +107,4 @@ header
 {
     color: white !important;
 }
+
